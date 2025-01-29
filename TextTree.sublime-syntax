@@ -8,34 +8,36 @@ contexts:
 
     main:
         - match: '^ *'
-          scope: indent.txtree
+          scope: meta.indent.txtree
         - match: "[*=≡]"
-          scope: synonym.txtree
+          scope: constant.language.synonym.txtree
         - match: \$
-          scope: basionym.txtree
+          scope: constant.language.basionym.txtree
         - match: \†
-          scope: extinct.txtree
+          scope: constant.language.extinct.txtree
         - match: \?
-          scope: provisional.txtree
+          scope: constant.language.provisional.txtree
         - match: \b[^*$\[{]+
-          scope: name.txtree
+          scope: text.name.txtree
         - match: \[.+\]
-          scope: rank.txtree
+          scope: constant.other.rank.txtree
         - match: "#.*$"
-          scope: comment.txtree
+          scope: comment.line.txtree
         - match: \{
+          scope: punctuation.section.braces.begin.txtree
           push: data
 
-    data:
-        - meta_scope: data.txtree
+    data:      
+        - meta_scope: meta.braces.txtree
         - match: "[A-Z]+(?==)"
-          scope: datakey.txtree
+          scope: variable.parameter.txtree
         - match: =
-          scope: dataequal.txtree
+          scope: keyword.operator.assignment.txtree
         - match: "(?<=[=,])[^, }]+(?=[ ,}])"
-          scope: datavalue.txtree
+          scope: string.unquoted.txtree
         - match: \,
-          scope: datadelim.txtree
+          scope: punctuation.separator.txtree
         - match: \}
+          scope: punctuation.section.braces.end.txtree
           pop: true
 

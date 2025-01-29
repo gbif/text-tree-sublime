@@ -18,61 +18,71 @@
     [
         {
             "name": "textree indent",
-            "scope": "indent.txtree"
+            "scope": "meta.indent.txtree"
         },
         {
             "name": "textree synonym",
-            "scope": "synonym.txtree",
+            "scope": "constant.language.synonym.txtree",
             "foreground": "#F1C40F" // Yellow
         },
         {
             "name": "textree basionym",
-            "scope": "basionym.txtree",
-            "foreground": "#E67E22" // Red
+            "scope": "constant.language.basionym.txtree",
+            "foreground": "#E67E22" // Red orange
         },
         {
             "name": "textree extinct",
-            "scope": "extinct.txtree",
+            "scope": "constant.language.extinct.txtree",
             "foreground": "#cccccc" // light grey
         },
         {
             "name": "textree provisional",
-            "scope": "provisional.txtree",
+            "scope": "constant.language.provisional.txtree",
             "foreground": "#cccccc" // light grey
         },
         {
             "name": "textree name",
-            "scope": "name.txtree",
+            "scope": "text.name.txtree",
             "foreground": "#5ebbff" // light Blue
         },
         {
             "name": "textree rank",
-            "scope": "rank.txtree",
-            "foreground": "#AAD94C" // Blue
+            "scope": "constant.other.rank.txtree",
+            "foreground": "#AAD94C" // light green
         },
         {
             "name": "textree comment",
-            "scope": "comment.txtree",
+            "scope": "comment.line.txtree",
             "foreground": "#777777" // Grey
         },
         {
-            "name": "textree data",
-            "scope": "data.txtree",
-            "foreground": "#58D68D"
+            "name": "textree data begin",
+            "scope": "punctuation.section.braces.begin.txtree",
+            "foreground": "#58D68D" // blue-green
         },
         {
-            "name": "textree datakey",
-            "scope": "datakey.txtree",
+            "name": "textree data end",
+            "scope": "punctuation.section.braces.end.txtree",
+            "foreground": "#58D68D" // blue-green
+        },
+        {
+            "name": "textree data",
+            "scope": "meta.braces.txtree",
+            "foreground": "#58D68D" // blue-green
+        },
+        {
+            "name": "textree data parameter",
+            "scope": "variable.parameter.txtree",
             "foreground": "#CD6155"
         },
         {
-            "name": "textree datavalue",
-            "scope": "datavalue.txtree",
+            "name": "textree data value",
+            "scope": "string.unquoted.txtree",
             "foreground": "#145A32"
         },
         {
-            "name": "textree datadelim",
-            "scope": "datadelim.txtree",
+            "name": "textree data separator",
+            "scope": "punctuation.separator.txtree",
             "foreground": "#B6BCBF"
         }
     ]
